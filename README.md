@@ -14,6 +14,11 @@
 
 ## Supabase 설정
 
+현재 Supabase 프로젝트:
+
+- Project ref: `yokxfuuporzjctrgxvlp`
+- Table: `promotion_reviews`
+
 1. Supabase SQL Editor에서 `supabase/schema.sql` 내용을 실행합니다.
 2. Vercel 환경 변수에 아래 값을 등록합니다.
 
@@ -26,3 +31,4 @@ SUPABASE_SERVICE_ROLE_KEY
 
 - 2026-09-04: 승품단 심사 결과 안내 앱 초기 제작, 사진 입력/결과 전환/Supabase 저장 연동 추가.
 - 2026-09-04: Supabase 저장 방식을 서버 API로 변경해 서비스 키가 브라우저에 노출되지 않도록 개선.
+- 2026-09-04: Supabase 프로젝트 생성 및 `promotion_reviews` 테이블 반영 완료.
