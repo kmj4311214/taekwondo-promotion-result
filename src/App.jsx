@@ -118,7 +118,7 @@ function App() {
                 <Trophy aria-hidden="true" />
               </div>
               <p className="eyebrow">TAEKWONDO AWARDS</p>
-              <h1>승품단 심사 결과 안내</h1>
+              <h1>승품단 심사결과</h1>
             </div>
 
             <form className="intake-form" onSubmit={handleSubmit}>

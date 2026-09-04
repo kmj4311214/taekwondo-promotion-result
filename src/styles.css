@@ -113,6 +113,7 @@ button {
   flex-direction: column;
   justify-content: center;
   min-width: 0;
+  text-align: center;
 }
 
 .crest {
