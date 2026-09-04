@@ -158,9 +158,13 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(2.25rem, 6vw, 5.5rem);
+  font-size: 3.35rem;
   font-weight: 900;
-  text-wrap: balance;
+}
+
+.main-title {
+  white-space: nowrap;
+  text-align: center;
 }
 
 .intake-form {
@@ -525,6 +529,10 @@ input:focus {
     width: min(82vw, 250px);
   }
 
+  .main-title {
+    font-size: 2.65rem;
+  }
+
   .option-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -549,6 +557,10 @@ input:focus {
   .checking-panel,
   .result-panel {
     padding: 22px 16px;
+  }
+
+  .main-title {
+    font-size: 2.05rem;
   }
 
   .result-toggle {
