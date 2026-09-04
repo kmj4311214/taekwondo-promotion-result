@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Award, Camera, Check, ChevronRight, Medal, RotateCcw, ShieldCheck, Sparkles, Trophy, X } from 'lucide-react';
 import laurel from './assets/laurel.svg';
-import { isSupabaseConfigured, supabase } from './lib/supabase';
 
 const initialForm = {
   name: '',
@@ -55,20 +54,22 @@ function App() {
   };
 
   const saveReview = async () => {
-    if (!isSupabaseConfigured) {
-      return 'not-configured';
-    }
-
-    const { error } = await supabase.from('promotion_reviews').insert({
+    const response = await fetch('/api/reviews', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
       student_name: form.name.trim(),
       promotion_level: form.level,
       result: form.result,
       photo_data_url: form.photoDataUrl,
       photo_filename: form.photoName,
+      }),
     });
 
-    if (error) {
-      throw error;
+    if (!response.ok) {
+      throw new Error('Failed to save review');
     }
 
     return 'saved';
