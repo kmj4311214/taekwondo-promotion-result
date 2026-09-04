@@ -37,3 +37,4 @@ SUPABASE_SERVICE_ROLE_KEY
 - 2026-09-04: Supabase 저장 방식을 서버 API로 변경해 서비스 키가 브라우저에 노출되지 않도록 개선.
 - 2026-09-04: Supabase 프로젝트 생성 및 `promotion_reviews` 테이블 반영 완료.
 - 2026-09-04: Vercel 프로덕션 배포 및 Supabase 저장 API 검증 완료.
+- 2026-09-04: 배포 화면 공백 현상을 수정하기 위해 React 런타임 import를 명시화.

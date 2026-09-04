@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Award, Camera, Check, ChevronRight, Medal, RotateCcw, ShieldCheck, Sparkles, Trophy, X } from 'lucide-react';
 import laurel from './assets/laurel.svg';
 
